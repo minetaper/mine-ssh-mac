@@ -2,7 +2,8 @@
 
 MineSSH is a modern, intelligent SSH client designed specifically for macOS. It seamlessly integrates a powerful AI assistant with a robust terminal emulator, transforming how you interact with remote servers.
 
-![MineSSH Screenshot](https://via.placeholder.com/1200x675?text=MineSSH+Screenshot)
+<img width="2400" height="1410" alt="image" src="https://github.com/user-attachments/assets/ea7cac8d-2e63-41e9-a2d3-afffe154f7f9" />
+
 
 ## 🚀 Key Features
 
