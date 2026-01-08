@@ -3,8 +3,9 @@ import path from 'node:path'
 import { setupSSHHandler } from './ssh'
 import { setupAIHandler } from './ai'
 
-process.env.DIST = path.join(__dirname, '../dist')
-process.env.VITE_PUBLIC = app.isPackaged ? process.env.DIST : path.join(process.env.DIST, '../public')
+const DIST = path.join(__dirname, '../dist')
+process.env.DIST = DIST
+process.env.VITE_PUBLIC = app.isPackaged ? DIST : path.join(DIST, '../public')
 
 let win: BrowserWindow | null
 
@@ -33,7 +34,7 @@ function createWindow() {
     win.loadURL(VITE_DEV_SERVER_URL)
   } else {
     // win.loadFile('dist/index.html')
-    win.loadFile(path.join(process.env.DIST, 'index.html'))
+    win.loadFile(path.join(DIST, 'index.html'))
   }
 }
 
